@@ -55,17 +55,14 @@ git push origin 分支/master
 
 即可。
 
-
-
 补充：
 
 若遇到如下问题。
 
 ```git
 error: RPC failed; curl 28 OpenSSL SSL_read: Connection was reset, errno 10054
-fatal: expected flush after ref listingfatal: unable to access 'https://github.com/wuwenqin/something-about-C-C-.git/': OpenSSL SSL_read: Connection was reset, errno 10054
-
-
+fatal: expected flush after ref listing
+fatal: unable to access 'https://github.com/wuwenqin/something-about-C-C-.git/': OpenSSL SSL_read: Connection was reset, errno 10054
 ```
 
 需要使用命令:
@@ -75,3 +72,5 @@ git config --global http.sslVerify "false"
 ```
 
 作用：针对所有远程服务器全局执行，使git忽略[ssl](https://so.csdn.net/so/search?q=ssl&spm=1001.2101.3001.7020)证书错误（把忽略证书错误的设置限定在特定的仓库）
+
+- 缺点：每次上传代码都要这样来一次。
