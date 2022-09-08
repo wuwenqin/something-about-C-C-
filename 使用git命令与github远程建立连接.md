@@ -1,22 +1,18 @@
 # 与github建立连接的过程
 
-
-
 1. 最主要的，要先下载git(这里，可以在CSDN上找一篇安装的git文章实现，或者git官网的学习文档中查阅https://git-scm.com/book/zh/v2)
 
 安装后，在github设置密钥ssh keys(这个密钥，是通过在git Bash命令行界面上实现的) 
 
-
-
 2. 在要上传的文件夹(项目)中通过cmd命令进入，输入
-
+   
    ```c++
    git init
    ```
-
+   
    进行git库的初始化。（可以看到有一个.git文件夹，它是Git用来跟踪和管理版本库的。）
 
-3.  输入
+3. 输入
 
 ```git
 git status 
@@ -27,31 +23,23 @@ git add .
 
 git add . 则是将文件全部添加到仓库中。
 
-
-
 4. 输入 
-
+   
    ```git
    git commit -m "备注"
    ```
-
+   
    将项目携带"备注"提交到仓库中。
 
-   
-
-5.  在Github上创建一个空的仓库
+5. 在Github上创建一个空的仓库
 
 (通过点击个人头像处的 new repository来创建)
-
-
 
 6. 本地仓库与github上的仓库进行关联。
 
 ```c++
 git remote add origin "远程github仓库的git地址"
 ```
-
-
 
 7. 关联后，将本地仓库的项目推送（push）到github仓库中
 
@@ -66,24 +54,3 @@ git push origin 分支/master
 ```
 
 即可。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
