@@ -1,0 +1,3 @@
+"C:\C++Environment\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\TestPro.dir/objects.a
+C:\c++runTime\mingw64\bin\ar.exe cr CMakeFiles\TestPro.dir/objects.a @CMakeFiles\TestPro.dir\objects1.rsp
+C:\c++runTime\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\TestPro.dir/objects.a -Wl,--no-whole-archive -o TestPro.exe -Wl,--out-implib,libTestPro.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\TestPro.dir\linklibs.rsp
