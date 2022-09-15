@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
+
 int main()
 {
 
@@ -10,6 +11,4 @@ int main()
     cout << hex << i <<endl;
     cout << oct << i <<endl;
     cout << setbase(16) << i <<endl;
-
-
 }

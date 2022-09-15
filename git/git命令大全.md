@@ -58,3 +58,43 @@ git push -u origin master
 # git remote show 远程仓库地址   //显示某个远程仓库信息
 # git remote rm name //删除远程仓库
 ```
+
+
+
+## 9.git status 查看git的状态
+
+通过这个命令，可以查看当前 已经add(添加到git中的文件)(会看到从红色转成绿色的变化)。
+
+
+
+## 10.git log *打印出所有的提交记录*
+
+通过 git log 获取提交的 commit id。
+
+```git
+//查看最近3条更新日志，并且简单显示出所涉及的文件
+git log -3 --stat
+
+```
+
+
+
+
+
+## 11. git show [commit id] | grep diff | cut -d" " -f 3
+
+查看提交的信息。若直接使用 git show commitID，则不会筛选，全部数据返回
+
+
+
+## 12.查看某次提交(commit)的 详细文件列表
+
+首先要获取到对应commit的ID(可以通过git log获取)。
+
+然后，通过命令:
+
+```git
+git show commitID --stat
+```
+
+即可实现查看该commit的详细文件列表。
